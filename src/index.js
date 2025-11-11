@@ -1,6 +1,15 @@
-import "./style.css";
-console.log("welcome to my restaurant page");
+import loadHome from "./home.js";
+import loadMenu from "./menu.js";
+import loadAbout from "./about.js";
+import loadContact from "./contact.js";
 
-const heroHeading = document.createElement("h1");
-heroHeading.textContent = "Welcome to My Restaurant";
-document.getElementById("content").appendChild(heroHeading);
+function initializeWebsite() {
+  loadHome();
+
+  document.getElementById("home-btn").addEventListener("click", loadHome);
+  document.getElementById("menu-btn").addEventListener("click", loadMenu);
+  document.getElementById("about-btn").addEventListener("click", loadAbout);
+  document.getElementById("contact-btn").addEventListener("click", loadContact);
+}
+
+document.addEventListener("DOMContentLoaded", initializeWebsite);
