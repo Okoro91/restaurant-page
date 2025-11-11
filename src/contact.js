@@ -1,3 +1,4 @@
+import suyaland from "./assest/suya-place.jpeg";
 export default function loadContact() {
   const content = document.getElementById("content");
   content.innerHTML = "";
@@ -13,13 +14,13 @@ export default function loadContact() {
 
   const address = document.createElement("p");
   address.innerHTML =
-    "<strong>📍 Address:</strong> 123 Spice Avenue, Little Nigeria District, NYC 10001";
+    "<strong>📍 Address:</strong> 123 Suyaland Avenue, Ikorodu, Nigeria";
 
   const phone = document.createElement("p");
-  phone.innerHTML = "<strong>📞 Phone:</strong> (555) 123-4567";
+  phone.innerHTML = "<strong>📞 Phone:</strong> (234) 08123272914";
 
   const email = document.createElement("p");
-  email.innerHTML = "<strong>✉️ Email:</strong> orders@suya-palace.com";
+  email.innerHTML = "<strong>✉️ Email:</strong> orders@suyaland.com";
 
   const hours = document.createElement("p");
   hours.innerHTML =
@@ -29,10 +30,14 @@ export default function loadContact() {
   delivery.innerHTML =
     "<strong>🚚 Delivery:</strong> Available through all major delivery apps";
 
-  // Image placeholder for restaurant location
   const imagePlaceholder = document.createElement("div");
   imagePlaceholder.className = "image-placeholder";
-  imagePlaceholder.textContent = "[Image: Suya Palace Location]";
+
+  const suyalandImage = document.createElement("img");
+  suyalandImage.src = suyaland;
+  suyalandImage.alt = "Suyaland Palace Location";
+  suyalandImage.className = "food-image";
+  imagePlaceholder.appendChild(suyalandImage);
   imagePlaceholder.style.margin = "2rem 0";
   imagePlaceholder.style.height = "250px";
 

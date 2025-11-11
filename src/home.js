@@ -14,7 +14,7 @@ const loadHome = () => {
   hero.className = "hero";
 
   const heading = document.createElement("h1");
-  heading.textContent = " MI Suya Palace";
+  heading.textContent = " MI Suyaland Palace";
 
   const tagline = document.createElement("p");
   tagline.className = "tagline";
@@ -50,7 +50,7 @@ const loadHome = () => {
 
   const restaurantSign = document.createElement("div");
   restaurantSign.className = "restaurant-sign";
-  restaurantSign.textContent = "MI SUYA PALACE";
+  restaurantSign.textContent = "MI SUYALAND";
 
   const smoke = document.createElement("div");
   smoke.className = "smoke";

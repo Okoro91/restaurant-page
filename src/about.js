@@ -1,3 +1,4 @@
+import suya from "./assest/suya.jpeg";
 export default function loadAbout() {
   const content = document.getElementById("content");
   content.innerHTML = "";
@@ -6,10 +7,10 @@ export default function loadAbout() {
   aboutContent.className = "about-content";
 
   const heading = document.createElement("h1");
-  heading.textContent = "About Suya Palace";
+  heading.textContent = "About Suyaland Palace";
 
   const story = document.createElement("p");
-  story.innerHTML = `Founded in 2005 by Master Griller Alhaji Ibrahim, <strong>Suya Palace</strong> brings the authentic taste of Nigerian street food to the world. Our journey began in the bustling markets of Kano, where Alhaji Ibrahim perfected his suya recipe over decades.`;
+  story.innerHTML = `Founded in 2005 by Master Griller Alhaji Ibrahim Okoro, <strong>MI Suyaland Palace</strong> brings the authentic taste of Nigerian street food to the world. Our journey began in the bustling markets of Ikorodu, where Alhaji Ibrahim perfected his suya recipe over decades.`;
   story.style.marginBottom = "1.5rem";
   story.style.lineHeight = "1.8";
 
@@ -19,8 +20,12 @@ export default function loadAbout() {
   philosophy.style.lineHeight = "1.8";
 
   const imagePlaceholder = document.createElement("div");
+  const suyaImage = document.createElement("img");
+  suyaImage.src = suya;
+  suyaImage.alt = "Traditional Suya Grilling";
+  suyaImage.className = "food-image";
+  imagePlaceholder.appendChild(suyaImage);
   imagePlaceholder.className = "image-placeholder";
-  imagePlaceholder.textContent = "[Image: Traditional Suya Grilling]";
   imagePlaceholder.style.margin = "2rem 0";
 
   const mission = document.createElement("p");
